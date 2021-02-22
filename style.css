@@ -1,0 +1,169 @@
+/* Features Section
+--------------------------------*/
+#features {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #features .feature-block {
+    background: #fff none repeat scroll 0 0;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #features .feature-block:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #features .feature-block h4 {
+    margin-bottom: 20px;
+  }
+  
+  #features .feature-block p {
+    margin-bottom: 0;
+  }
+
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 6em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+/* ANIMACIJA 1 */
+.anim-typewriter{
+  animation: typewriter 1s steps(35) 1s 1 normal both,
+             blinkTextCursor 500ms steps(35) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 6em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+/* ANIMACIJA 2 */
+.anim-typewriter2{
+  animation: typewriter2 3s steps(50) 1s 1 normal both,
+             blinkTextCursor2 500ms steps(50) infinite normal;
+}
+@keyframes typewriter2{
+  from{width: 0;}
+  to{width: 20em;}
+}
+@keyframes blinkTextCursor2{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* NAVBAR */
+.navbar-fixed-topp.scrolled{
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+.navbar-fixed-topp{
+  background-color:#563d7c;
+  transition: background-color 200ms linear;
+}
+.letters{
+  color:white;
+  transition: color 200ms linear;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 3px;
+  
+}
+
+.footerletters{
+
+    color:white;
+    transition: color 200ms linear;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    
+  
+}
+
+.letters2{
+  color:#563d7c;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 3px;
+  
+}
+.letters2:hover{
+  color:yellow;
+  background-color:#563d7c;
+  transition: all 200ms linear;
+}
+
+.letters.scrolled{
+  color:#563d7c;
+  transition: color 200ms linear;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.borders li a:hover{
+
+  border-left: 1px solid white;
+  color: yellow;
+  transition: color 500ms ease-in-out;
+
+}
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #563d7c;
+  color: yellow;
+  text-decoration: none;
+}
+#button:active {
+  background-color: #563d7c;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
